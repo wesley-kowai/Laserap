@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e60303;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0); /* Background transparente */
+    padding: 20px;
+  }
+  
+  .logo {
+    color: rgb(255, 255, 255); /* Cor do texto */
+    font-size: 50px;
+    font-weight: bold; 
+    padding-left: 18%;
+  }
+  
+  
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Distância do header */
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  .search-btn {
+    background-color: #ccc; /* Cor de fundo do botão */
+    color: black; /* Cor do texto do botão */
+    border: none;
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transição suave de cor ao passar o mouse */
+  }
+  
+  .search-btn:hover {
+    background-color: #999; /* Cor de fundo do botão ao passar o mouse */
+  }
+  .main {
+    background-color: #ffffff; /* Cor de fundo cinza */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px;
+  }
+  
+  .product-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .product {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .product-info {
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+h3 {
+    margin-top: 0;
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+p {
+    margin-bottom: 5px;
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+  
+  /* Consulta de mídia para dispositivos móveis */
+  @media screen and (max-width: 768px) {
+    .product {
+      flex: 1 0 calc(90% - 20px); /* Produtos ocupam 100% da largura em telas menores */
+      max-width: calc(100% - 20px);
+    }
+  }
+  
+  
